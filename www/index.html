@@ -14,6 +14,15 @@
   </head>
 
   <body data-ember-extension="1">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=291388287632763";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
 
     <div class="container">
       <div class="jumbotron">
@@ -46,6 +55,13 @@
           <p>I think everyone should learn how to program a computer, because it teaches you how to think. I view computer science as a liberal art, <strong>something everyone should learn to do</strong>.</p>
           <p><i>Steve Jobs</i></p>
         </blockquote>
+      </div>
+      <div class="social">
+        <div class="fb-like" data-href="http://learnco.de" data-width="200" data-layout="button_count" data-show-faces="true" data-send="true"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-related="mochaleaf">Tweet</a>
+        <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+          </script>
       </div>
       <hr>
 
