@@ -8,5 +8,8 @@
   },
   "repository": "",
   "author": "",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "node-static": "~0.7.1"
+  }
 }
