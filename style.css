@@ -14,7 +14,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  margin: 80px 0;
+  margin: 40px 0;
   text-align: center;
 }
 .jumbotron h1 {
@@ -47,16 +47,98 @@ body {
   clear:left;
   font:14px Helvetica,Arial,sans-serif;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 70px auto;
+  border: solid 1px #eee;
+  border-radius: 15px;
+  padding: 15px;
 }
+
+#mc_embed_signup .mc-field-group {
+  width: 100%;
+}
+
 #mc_embed_signup form {
   padding: 0;
   text-align: center;
 }
 #mc_embed_signup form input {
   margin: 0 auto;
+  text-align: center;
 }
 #mc_embed_signup form input[type="email"] {
   font-size: 18px;
   height: auto;
+}
+
+/* Animations */
+
+.quotations {
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: center;
+  background: #eee;
+  border-radius: 15px;
+  padding: 15px;
+  min-height: 100px;
+}
+
+.quotations blockquote {
+  display: none;
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
+.quotations blockquote p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.animated {
+  -webkit-animation-fill-mode:both;
+  -moz-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  -o-animation-fill-mode:both;
+  animation-fill-mode:both;
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  -ms-animation-duration:1s;
+  -o-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.animated.hinge {
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  -ms-animation-duration:1s;
+  -o-animation-duration:1s;
+  animation-duration:1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
 }

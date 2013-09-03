@@ -34,14 +34,24 @@
           <div class="mc-field-group">
             <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your Email Address">
           </div>
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>
           <input type="submit" value="Learn More" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-success">
         </form>
         </div>
         <!--End Mailchimp Signup Form-->
+      </div>
+      <div class="quotations">
+        <blockquote id="quote0" class="animated fadeIn">
+          <p>All of my friends who have younger siblings who are going to college or high school - my number one piece of advice is: <strong>You should learn how to program.</strong></p>
+          <p><i>Mark Zuckerberg</i></p>
+        </blockquote>
+        <blockquote id="quote1"class="animated fadeIn">
+          <p>We are now at a point where we must <strong>educate our children</strong> in what no one knew yesterday, and prepare our schools for what no one knows yet.</p>
+          <p><i>Margaret Mead</i></p>
+        </blockquote>
+        <blockquote id="quote2"class="animated fadeIn">
+          <p>I think everyone should learn how to program a computer, because it teaches you how to think. I view computer science as a liberal art, <strong>something everyone should learn to do</strong>.</p>
+          <p><i>Steve Jobs</i></p>
+        </blockquote>
       </div>
       <hr>
 
@@ -50,12 +60,28 @@
         <p>© MochaSprouts 2013</p><p>A project by <a href="http://mochaleaf.com">MochaLeaf, Inc</a></p>
       </div>
     </div>
+    <script type="text/javascript">
+      var quoteIndex = -1;
+      var showNextQuote = function() {
+        var oldQuote = document.getElementById('quote'+quoteIndex);
+        quoteIndex = (quoteIndex + 1) % 3;
+        var newQuote = document.getElementById('quote'+quoteIndex);
+
+        if (oldQuote) oldQuote.style.display = "none";
+        if (newQuote) newQuote.style.display = "block";
+      }
+
+      showNextQuote()
+      setInterval(function(){ showNextQuote() }, 5000)
+
+    </script>
   </body>
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-43706064-1', 'learnco.de');
     ga('send', 'pageview');
