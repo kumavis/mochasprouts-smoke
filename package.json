@@ -1,0 +1,15 @@
+{
+  "name": "mochasprouts-smoke-server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sudo node . &"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "node-static": "~0.7.1"
+  }
+}
